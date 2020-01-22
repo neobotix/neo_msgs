@@ -1,5 +1,7 @@
 # This message holds the emergency stop (EMStop) status of the robot. It detects wether an EMStop is caused by the safety laserscanner or the emergency stop buttons. Moreover, it gives signalizes wether the EMStop was confirmed (after Button press stop) and the system is free again.
 
+std_msgs/Header header
+
 # Possible EMStop States
 int16 EMFREE = 0 		# system operatign normal
 int16 EMSTOP = 1 		# emergency stop is active (Button pressed; obstacle in safety field of scanner)

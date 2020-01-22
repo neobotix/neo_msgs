@@ -1,5 +1,6 @@
 # This message holds specific data available from Neobotix RelayBoardV2
- 
+
+std_msgs/Header header
 
 # Possible Communication States
 int16 CS_NOT_ESTABLISHED = 0 		# configuration process has not been started
