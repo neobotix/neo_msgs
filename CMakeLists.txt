@@ -23,6 +23,7 @@ find_package(catkin REQUIRED COMPONENTS
 	Keypad.msg
 	LCDOutput.msg
 	USBoard.msg
+  USBoardV2.msg
 	RelayBoardV2.msg
 	IOBoard.msg
  )
