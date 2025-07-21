@@ -11,10 +11,7 @@ endif(NOT CMAKE_BUILD_TYPE)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(catkin REQUIRED COMPONENTS
-  std_msgs
-  message_generation
-)
+find_package(catkin REQUIRED COMPONENTS message_generation std_msgs)
 
  ##Generate messages in the 'msg' folder
  add_message_files(
@@ -26,6 +23,10 @@ find_package(catkin REQUIRED COMPONENTS
   USBoardV2.msg
 	RelayBoardV2.msg
 	IOBoard.msg
+  RelayBoardV3.msg
+  KinematicsState.msg
+  SafetyMode.msg
+  SafetyState.msg
  )
 
 
@@ -35,7 +36,7 @@ find_package(catkin REQUIRED COMPONENTS
  )
 
 catkin_package(
-  CATKIN_DEPENDS message_runtime
+  CATKIN_DEPENDS message_runtime std_msgs
 )
 
 
